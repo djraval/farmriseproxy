@@ -15,7 +15,7 @@ curl_setopt_array($curl, array(
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => "GET",
   CURLOPT_HTTPHEADER => array(
-    "accesstoken: 17018fd8-fd74-40f3-84c9-53e0d85527e0",
+    "accesstoken: f618c213-4831-4a5b-8465-067f5b0bee9a",
     "appversion: 1.3.0",
     "authorization: Basic ZGV2ZWxvcGVyOm1vYmlsZWFwcEBGUg==",
     "cache-control: no-cache",

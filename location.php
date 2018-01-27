@@ -16,7 +16,7 @@ curl_setopt_array($curl, array(
   CURLOPT_CUSTOMREQUEST => "POST",
   CURLOPT_POSTFIELDS => "{\"latitude\":\"".$_GET["lat"]."\",\"userId\":\"fb3c7b8f-0305-4f9a-91cd-7dd0deeaca89\",\"longitude\":\"".$_GET["long"]."\"}",
   CURLOPT_HTTPHEADER => array(
-    "accesstoken: 17018fd8-fd74-40f3-84c9-53e0d85527e0",
+    "accesstoken: f618c213-4831-4a5b-8465-067f5b0bee9a",
     "appversion: 1.3.0",
     "authorization: Basic ZGV2ZWxvcGVyOm1vYmlsZWFwcEBGUg==",
     "cache-control: no-cache",
