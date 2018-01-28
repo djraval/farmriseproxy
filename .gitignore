@@ -1,2 +1,3 @@
 cookie.txt
-./vendor
+/vendor
+composer.lock
