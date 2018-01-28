@@ -4,6 +4,7 @@ require 'vendor/autoload.php';;
 use Symfony\Component\DomCrawler\Crawler;
 use Symfony\Component\CssSelector\CssSelectorConverter;
 
+$type = $_GET["Type"];
 $state = $_GET["SCode"];
 $district = $_GET["DCode"];
 $block = $_GET["BCode"];
@@ -14,7 +15,7 @@ header("Access-Control-Allow-Origin: *");
 
 $curl = curl_init();
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "http://www.farmer.gov.in/FertilizerPesticideDealers.aspx?dealertype=P&SCode=".$state."&DCode=".$district."&BCode=".$block,
+  CURLOPT_URL => "http://www.farmer.gov.in/FertilizerPesticideDealers.aspx?dealertype=".$type."&SCode=".$state."&DCode=".$district."&BCode=".$block,
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,
@@ -67,33 +68,5 @@ curl_close($curl);
 $crawler = new Crawler($response);
 $crawler = $crawler->filter("div");
 
-/* $crawler->filter('table tbody tr td')->each(function (Crawler $crawler,$i) {
-  foreach ($crawler as $node) {
-    if($i %)
-      $node->parentNode->removeChild($node);
-  }
-}); */
 
 echo $crawler->html();
-//echo $response;
-function parseXLS($data){
-    $row_count=0;
-    $json = array();
-    $crawler = new Crawler($data);
-    $crawler = $crawler->filter("tr");
-    $len = $crawler->count();
-    $i = 0;
-    foreach($crawler as $node){
-      if($i == 0 || $i == $len-1)
-      {
-        continue;
-      }
-      //$row = $node->children();
-     // $id = $row->eq(1)->children();
-     $i++;
-    }
-
-    echo $i;
-}
-
-//parseXLS($response);
