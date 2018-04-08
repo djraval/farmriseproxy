@@ -16,12 +16,12 @@ curl_setopt_array($curl, array(
   CURLOPT_CUSTOMREQUEST => "POST",
   CURLOPT_POSTFIELDS => "{\"latitude\":\"".$_GET["lat"]."\",\"userId\":\"fb3c7b8f-0305-4f9a-91cd-7dd0deeaca89\",\"longitude\":\"".$_GET["long"]."\"}",
   CURLOPT_HTTPHEADER => array(
-    "accesstoken: f618c213-4831-4a5b-8465-067f5b0bee9a",
+    "accesstoken: b15febb7-1528-4d8f-94af-72c7de53e59b",
     "appversion: 1.3.0",
     "authorization: Basic ZGV2ZWxvcGVyOm1vYmlsZWFwcEBGUg==",
     "cache-control: no-cache",
     "content-type: application/json",
-    "deviceid: 9999999999999999",
+    "deviceid: 79501992d60c4c01",
     "phonenumber: 8469696281",
     "postman-token: d09e720d-495a-e113-c21d-c5fa15dcd71a",
     "userid: fb3c7b8f-0305-4f9a-91cd-7dd0deeaca89"
@@ -44,13 +44,14 @@ curl_setopt_array($curl, array(
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => "GET",
   CURLOPT_HTTPHEADER => array(
-    "accesstoken: f618c213-4831-4a5b-8465-067f5b0bee9a",
+    "accesstoken: b15febb7-1528-4d8f-94af-72c7de53e59b",
     "appversion: 1.3.0",
     "authorization: Basic ZGV2ZWxvcGVyOm1vYmlsZWFwcEBGUg==",
     "cache-control: no-cache",
-    "deviceid: 9999999999999999",
+    "content-type: application/json",
+    "deviceid: 79501992d60c4c01",
     "phonenumber: 8469696281",
-    "postman-token: b74d553b-577c-c8a7-3591-8b1649b57f8a",
+    "postman-token: d09e720d-495a-e113-c21d-c5fa15dcd71a",
     "userid: fb3c7b8f-0305-4f9a-91cd-7dd0deeaca89"
   ),
 ));
